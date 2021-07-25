@@ -1,0 +1,46 @@
+.header__container {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+.logo {
+  font-size: 20px;
+}
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+.user {
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.my__accout {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.my__accout span {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.cartIcon,
+.user {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .header__container {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 16px;
+  }
+}

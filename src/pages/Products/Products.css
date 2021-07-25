@@ -1,0 +1,125 @@
+.container {
+  margin: 2rem;
+}
+
+.card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 5px;
+}
+
+.card img {
+  max-height: 150px;
+  object-fit: contain;
+}
+.title {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.card__group {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price {
+  font-size: 13.5px;
+
+  color: rgb(218, 54, 54);
+}
+.addtoCart {
+  margin-top: 7px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 5px 8px;
+  transition: 0.1s ease-in-out;
+}
+.addtoCart:hover {
+  background: rgb(218, 54, 54);
+}
+
+.addtoCart:active {
+  transform: scale(0.95);
+}
+.searchBar {
+  width: 50%;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #86898b2a;
+}
+
+input[type="text"] {
+  width: 100%;
+  background: #86898b2a;
+  outline: none;
+  border: 0;
+  height: 100%;
+  padding: 7px 10px;
+}
+
+.searchIcon {
+  padding: 3px 8px;
+}
+.searchIcon img {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+/* -------------------------------- loading spinner  */
+.loading {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid rgba(0, 0, 0, 0.171);
+  border-radius: 50%;
+  border-top: 5px solid #000000;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 770px) {
+  .container {
+    margin: 2rem 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
