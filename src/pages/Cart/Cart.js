@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
-
+import { PlusCircle, MinusCircle, Trash } from "phosphor-react";
 function Cart() {
   const {
     isEmpty,
@@ -44,27 +44,25 @@ function Cart() {
           {items.map((item, index) => (
             <div className="cart__row" key={index}>
               <img className="cart__itemImage" src={item.image} alt="" />
-              <p>{item.title}</p>
+              <p>{item.title.slice(0, 25)}</p>
               <div className="totalItems">
-                <img
-                  onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
-                  src="https://image.flaticon.com/icons/png/512/1828/1828906.png"
-                  alt=""
+                <MinusCircle
+                  className="btn"
+                  onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
+                  size={25}
                 />
                 <span>{item.quantity}</span>
-
-                <img
+                <PlusCircle
+                  className="btn"
                   onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
-                  src="https://image.flaticon.com/icons/png/512/1828/1828926.png"
-                  alt=""
+                  size={25}
                 />
               </div>
               <span className="item__price">{item.price}</span>
-              <img
+              <Trash
+                className="btn"
                 onClick={() => removeItem(item.id)}
-                src="https://image.flaticon.com/icons/png/512/1214/1214428.png"
-                alt=""
-                className="removeItemIcon"
+                size={25}
               />
             </div>
           ))}

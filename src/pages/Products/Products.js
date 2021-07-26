@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Products.css";
 import { useCart } from "react-use-cart";
-
+import { MagnifyingGlass } from "phosphor-react";
 function Products({ itemsData, loading }) {
   const [serachKey, setSerachKey] = useState("");
 
@@ -20,10 +20,7 @@ function Products({ itemsData, loading }) {
           }}
         />
         <div className="searchIcon">
-          <img
-            src="https://image.flaticon.com/icons/png/512/622/622669.png"
-            alt=""
-          />
+          <MagnifyingGlass className="searchIconIcon" size={18} />
         </div>
       </div>
       <div className="container">

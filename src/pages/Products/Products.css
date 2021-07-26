@@ -74,13 +74,10 @@ input[type="text"] {
 }
 
 .searchIcon {
-  padding: 3px 8px;
+  padding: 0 8px;
 }
-.searchIcon img {
-  display: flex;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
+.searchIconIcon {
+  margin-top: 3px;
 }
 /* -------------------------------- loading spinner  */
 .loading {

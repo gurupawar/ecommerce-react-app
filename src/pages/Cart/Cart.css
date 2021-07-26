@@ -40,7 +40,9 @@
   display: flex;
   align-items: center;
 }
-
+.btn {
+  cursor: pointer;
+}
 .totalItems img {
   height: 20px;
   width: auto;
