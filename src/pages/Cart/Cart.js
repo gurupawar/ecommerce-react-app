@@ -48,7 +48,7 @@ function Cart() {
               <div className="totalItems">
                 <MinusCircle
                   className="btn"
-                  onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
+                  onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
                   size={25}
                 />
                 <span>{item.quantity}</span>
