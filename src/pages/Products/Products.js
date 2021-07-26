@@ -41,7 +41,7 @@ function Products({ itemsData, loading }) {
                 <img src={item.image} alt="" />
                 <div className="card__group">
                   <p className="title">{item.title.slice(0, 25)}</p>
-                  <p className="price">{item.price}</p>
+                  <p className="price">${item.price}</p>
                   <button className="addtoCart" onClick={() => addItem(item)}>
                     Add to Cart
                   </button>
