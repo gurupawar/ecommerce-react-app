@@ -58,7 +58,7 @@ function Cart() {
                   size={25}
                 />
               </div>
-              <span className="item__price">{item.price}</span>
+              <span className="item__price">${item.price}</span>
               <Trash
                 className="btn"
                 onClick={() => removeItem(item.id)}
