@@ -24,9 +24,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <Switch>
         <CartProvider>
+          <Header />
           <Route
             exact
             path="/"

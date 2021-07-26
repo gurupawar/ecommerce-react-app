@@ -27,6 +27,24 @@
   font-size: 10px;
   color: rgba(0, 0, 0, 0.603);
 }
+.group {
+  position: relative;
+}
+.itemCound {
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgb(218, 54, 54);
+  border-radius: 100px;
+}
 
 @media (min-width: 500px) {
   .header__container {
