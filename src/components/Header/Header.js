@@ -5,7 +5,6 @@ import { useCart } from "react-use-cart";
 import { ShoppingCart, UserCircle } from "phosphor-react";
 function Header() {
   const { totalUniqueItems } = useCart();
-  console.log(totalUniqueItems);
   return (
     <>
       <div className="header__container">
