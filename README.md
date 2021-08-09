@@ -2,7 +2,7 @@
 
 ### Demo
 
-[https://ecommerce-reactappp.herokuapp.com/](https://ecommerce-reactappp.herokuapp.com/)
+[https://ecommerce-react-app.vercel.app/](https://ecommerce-react-app.vercel.app/)
 
 ![](markdown/desktop.png)
 
